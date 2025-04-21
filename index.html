@@ -138,8 +138,8 @@ button:hover {
   </div>
   <button id="calculate-btn" onclick="calculate()">Рассчитать срок</button>
   <div style="display: flex; gap: 10px; margin-top: 10px;">
-    <button onclick="resetCalculator()" style="background-color: #95a5a6;">Сбросить</button>
-    <button onclick="copyResult()" style="background-color: #2ecc71;">Скопировать результат</button>
+    <button onclick="resetCalculator()" style="background-color: #95a5a6;">Жою</button>
+    <button onclick="copyResult()" style="background-color: #2ecc71;">Жауапты көшіру</button>
   </div>
   <div id="result" style="display: none;">
     <div class="result-title" id="result-title">Предполагаемый срок:</div>
@@ -568,7 +568,7 @@ const articlesData = {
                 }
             },
             kk: {
-                title: "Тұтқындау мерзімін есептегіш (ҚР ҚК)",
+                title: "Жаза мерзімін есептеуге арналған калькулятор (ҚР ҚК)",
                 articleLabel: "ҚР ҚК бойынша бапты таңдаңыз:",
                 calculateBtn: "Мерзімін есептеу",
                 resultTitle: "Болжамды мерзім:",
@@ -689,7 +689,7 @@ const articlesData = {
             if (!article) {
                 resultDiv.style.display = 'block';
                 document.getElementById('result-value').textContent = 
-                    currentLang === 'ru' ? 'Выберите статью' : 'Мақала таңдаңыз';
+                    currentLang === 'ru' ? 'Выберите статью' : 'Бапты таңдаңыз';
                 return;
             }
             
